@@ -1,0 +1,24 @@
+{
+  "name": "grunt-testling",
+  "description": "Grunt task to run tests using the Testling API.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/bevacqua/grunt-testling",
+  "author": {
+    "name": "Nicolas Bevacqua",
+    "email": "hello@bevacqua.io",
+    "url": "http://bevacqua.io/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bevacqua/grunt-testling.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
