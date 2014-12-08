@@ -8,10 +8,10 @@ module.exports = function (grunt) {
     var local = path.join(process.cwd(), 'node_modules/testling/bin/cmd.js');
     var isLocal = fs.existsSync(local);
     var opts = { stdio: 'inherit' };
-    var process;
+    var spawned;
 
-    process = spawn(isLocal ? local : 'testling', [], opts);
-    process.on('close', function(code) {
+    spawned = spawn(isLocal ? local : 'testling', [], opts);
+    spawned.on('close', function(code) {
       done(!code);
     });
   });
